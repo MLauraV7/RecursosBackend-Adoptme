@@ -62,7 +62,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/UserUpdate"
+              $ref: "#/components/schemas/User"
       responses:
         "200":
           description: Usuario actualizado correctamente
@@ -109,17 +109,3 @@ components:
         first_name: Lara
         last_name: Vallejos
         email: lara@email.com
-
-    UserUpdate:
-      type: object
-      properties:
-        first_name:
-          type: string
-        last_name:
-          type: string
-        email:
-          type: string
-      example:
-        first_name: Laura
-        last_name: Varengo
-        email: laura@email.com
